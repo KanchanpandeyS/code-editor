@@ -6,7 +6,7 @@ export default function Header() {
     <div id="header">
       <img src={header} alt="" height="70px" />
       <h2 id="title">Code Editor</h2>
-      {/* <p>By Kanchan Pnadewy</p> */}
+      {/* <p>By Kanchan Pnadey</p> */}
     </div>
   );
 }
