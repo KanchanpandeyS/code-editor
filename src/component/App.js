@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
  import Editor from './Editor';
+ import useLocalStorge from '../hooks/useLocalStorage'
 
 function App() {
-  const [html, setHtml] = useState('')
-  const [css, setCss] = useState('')
-  const [js, setJs] = useState('')
+  const [html, setHtml] = useLocalStorge('html','')
+  const [css, setCss] = useLocalStorge('css','')
+  const [js, setJs] = useLocalStorge('js','')
   const [srcDoc, setsrcDoc] = useState('')
   useEffect(() => {
     const timeout = setTimeout(() => {
